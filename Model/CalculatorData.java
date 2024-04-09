@@ -6,6 +6,7 @@ public class CalculatorData {
     private double num01;
     private double num02;
     private double result;
+    private boolean hasResult = false;
 
     // TEXTFIELD
     public String getTextField(){
@@ -53,4 +54,12 @@ public class CalculatorData {
         this.result = newValue;
     }
 
+    // HAS RESULT
+    public boolean getHasResult(){
+        return hasResult;
+    }
+
+    public void setHasResult(boolean newValue){
+        this.hasResult = newValue;
+    }
 }
