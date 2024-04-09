@@ -29,6 +29,7 @@ public class CalculatorView{
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(420, 550);
         frame.setLayout(null);
+        frame.setResizable(false);
 
         textField = new JTextField();
         textField.setBounds(50, 25, 300, 50);
@@ -107,6 +108,10 @@ public class CalculatorView{
     public void addNumbersListener(ActionListener listener){
         for (int i = 0; i < numberButtons.length; i++){
             numberButtons[i].addActionListener(listener);
+        }
+
+        for (int i = 0; i < functionButtons.length; i++){
+            functionButtons[i].addActionListener(listener);
         }
     }
 
