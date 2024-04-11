@@ -143,6 +143,7 @@ public class CalculatorController {
                         temp = temp * -1;
                         view.setTextField(String.valueOf(temp));
                         model.setTextField(view.getTextField());
+                        
                     }
                 }
 
